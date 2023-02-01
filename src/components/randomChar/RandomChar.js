@@ -1,22 +1,23 @@
 import {Component} from "react";
+import MarvelService from "../../services/MarvelService/MarvelService";
 
 import './randomChar.scss';
 import mjolnir from '../../resources/img/mjolnir.png';
-import MarvelService from "../../services/MarvelService/MarvelService";
 
 class RandomChar extends Component {
     constructor(props) {
         super(props);
         this.updateChar();
     }
-    state = {
-        char: {},
-    }
 
     marvelService = new MarvelService();
 
-    onCharLoaded = (char) = {
-        this.setState({char: char})
+    state = {
+        char: {}
+    }
+
+    onCharLoaded = (char) => {
+        this.setState({char})
     }
 
     updateChar = () => {
@@ -28,7 +29,7 @@ class RandomChar extends Component {
     }
 
     render() {
-        const {name, description, thumbnail, homepage, wiki} = this.state;
+        const {char: {name, description, thumbnail, homepage, wiki}} = this.state;
         return (
             <div className="randomchar">
                 <div className="randomchar__block">
