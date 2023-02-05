@@ -4,17 +4,17 @@ const AppHeader = () => {
     return (
         <header className="app__header">
             <h1 className="app__title">
-                <a href="https://www.google.com/">
+                <a href="https://www.marvel.com/">
                     <span>Marvel</span> information portal
                 </a>
             </h1>
             <nav className="app__menu">
                 <ul>
                     <li>
-                        <a href="https://www.google.com/">Characters</a>
+                        <a href="https://www.marvel.com/characters">Characters</a>
                     </li>
                     <li>
-                        <a href="https://www.google.com/">Comics</a>
+                        <a href="https://www.marvel.com/comics">Comics</a>
                     </li>
                 </ul>
             </nav>

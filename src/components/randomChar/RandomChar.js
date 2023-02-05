@@ -83,7 +83,6 @@ const View = ({char}) => {
         imgStyle = {'objectFit' : 'contain'};
     }
     return (
-        <div className="randomchar">
             <div className="randomchar__block">
                 <img src={thumbnail} alt="Random character" className="randomchar__img" style={imgStyle}/>
                 <div className="randomchar__info">
@@ -101,7 +100,6 @@ const View = ({char}) => {
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
 
